@@ -13,7 +13,8 @@ export class OnlyNumberDirective {
 
     let e = <KeyboardEvent>event;
     if (this.OnlyBinary) {
-      if ([96, 97, 48, 49].indexOf(e.keyCode) !== -1) {
+
+      if (['0', '1'].indexOf(e.key) !== -1) {
 
         return;
       }

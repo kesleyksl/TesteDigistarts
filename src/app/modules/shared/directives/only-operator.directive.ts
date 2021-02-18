@@ -13,7 +13,7 @@ export class OnlyOperatorDirective {
 
     let e = <KeyboardEvent> event;
     if (this.OnlyOperator) {
-      if ( [111, 106, 109, 107, 53, 187, 189, 193, 56].indexOf(e.keyCode) !== -1 && ['+', '-', '*', '/', '%'].indexOf(e.key) !== -1) {
+      if ( ['+', '-', '*', '/', '%'].indexOf(e.key) !== -1) {
 
           return; 
         }
